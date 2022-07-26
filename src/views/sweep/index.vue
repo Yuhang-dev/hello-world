@@ -55,6 +55,9 @@ export default {
     },
     methods: {
         initGame(){
+
+          //第一个翻开的区域不能为雷
+
             var coords = [];//记录所有的的坐标值集合[{x,y}]
             //生成对应格子的数据对象
             for(var y = 0; y < this.row; y++){
@@ -126,6 +129,8 @@ export default {
                 //         this.recursionCoords(r.data, r.x+','+r.y)
                 //     }
                 // });
+
+                //需要清出周围相连所有安全的区域
             }
             else{
                 item.status = 5;
