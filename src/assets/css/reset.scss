@@ -1,0 +1,15 @@
+*{
+    margin: 0; padding: 0;
+}
+a{color: #1890FF;
+    &:hover{
+        color: #656565;
+    }
+}
+img{ border: 0 none; vertical-align: middle;}
+body{
+    font-family: '微软雅黑';
+    font-size: 14px;
+    color: #848484;
+    background: #f1f4f8;
+}
