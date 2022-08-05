@@ -54,6 +54,10 @@ const routes = [
   {
     path: '/sweep',
     component: () => import('@/views/sweep/')
+  },
+  {
+    path: '/testt',
+    component: () => import('@/views/test/')
   }
 ]
 
