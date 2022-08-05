@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <p><button @click="count++;left--">You click me {{count}} times</button></p>
-    <p><button @click="count++;left--">You have {{left}} times left!</button></p>
+    <p><button @click="counts">You click me {{count}} times</button></p>
+    <p><button @click="counts">You have {{left}} times left!</button></p>
   </div>
 </template>
 
@@ -11,6 +11,12 @@ export default {
     return {
       count: 0,
       left: 100
+    }
+  },
+  methods: {
+    counts () {
+      this.count++;
+      this.left--;
     }
   }
 }
